@@ -1,3 +1,25 @@
+##Installations of backend(Node.js with express)##
+node installation
+npm install express
+npm install cors
+npm install -g nodemon
+npm install body-parser
+npm install sqlite3
+npm install dotenv
+#commands to run#
+node index.js
+##Installations of frontend(react)##
+npx create-react-app my-app
+cd my-app
+npm install react-router-dom
+npm install chart.js react-chartjs-2
+npm install axios
+npm install @mui/material @emotion/react @emotion/styled
+npm install bootstrap
+#commands to run#
+npm start
+npm run build
+  
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
