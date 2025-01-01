@@ -1,0 +1,168 @@
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #138baa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+
+.dashboard-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: palevioletred;
+}
+
+
+.error-message {
+  color: red;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+.loading-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+
+.metrics-and-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.portfolio-metrics-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex: 1;
+}
+
+.pie-chart-container,
+.add-stock-form-container {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  background-color: #dbd7d7;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(124, 48, 48, 0.1);
+}
+
+/* Add stock form layout */
+.add-stock-form-container {
+  background-color: #b79a9a;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.add-stock-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.add-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #45a049;
+}
+
+/* Portfolio metrics */
+.portfolio-metrics {
+  background-color: #b6e0eb;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-metrics h3,
+.portfolio-metrics h4 {
+  color: #333;
+}
+
+.portfolio-metrics p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Stock card layout */
+.stock-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.stock-card {
+  background-color: #f5efee;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.stock-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.stock-card p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.card-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.action-button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.save-button {
+  background-color: #2196F3;
+  color: white;
+}
+
+.cancel-button {
+  background-color: #9e9e9e;
+  color: white;
+}
