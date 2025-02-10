@@ -24,7 +24,6 @@ const StockDashboard = () => {
   });
   const [isMetricsLoading, setIsMetricsLoading] = useState(true); 
 
-  // Fetch stock data
   useEffect(() => {
     const fetchStocks = async () => {
       try {
