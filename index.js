@@ -12,7 +12,6 @@ const PORT = 5000;
 app.use(bodyParser.json());
 app.use(cors());
 
-// Connect to SQLite database
 const db = new sqlite3.Database("./portfolio.db", (err) => {
   if (err) {
     console.error("Error connecting to SQLite:", err.message);
@@ -33,7 +32,6 @@ db.run(
   )`
 );
 
-// Finnhub API Key
 const FINNHUB_API_KEY = 'ctpcnmhr01qqsrsagglgctpcnmhr01qqsrsaggm0';
 
 
@@ -152,8 +150,6 @@ app.delete("/stocks/:id", (req, res) => {
     res.status(200).json({ deletedRows: this.changes });
   });
 });
-
-// Route to get portfolio metrics
 app.get("/portfolio-metrics", async (req, res) => {
   const query = "SELECT * FROM stocks";
   db.all(query, [], async (err, rows) => {
@@ -168,8 +164,6 @@ app.get("/portfolio-metrics", async (req, res) => {
     let portfolioDistribution = [];
 
     const updatedStocks = await fetchStockDataWithThrottle(rows);
-
-    // Calculate total value, top-performing stock, and distribution
     for (let stock of updatedStocks) {
       if (stock.current_price) {
         const stockValue = stock.quantity * stock.current_price;
@@ -203,7 +197,7 @@ app.get("/portfolio-metrics", async (req, res) => {
   });
 });
 
-// Set up a cron job to update stock prices every 10 minutes
+
 cron.schedule("*/10 * * * *", async () => {
   const query = "SELECT * FROM stocks";
   db.all(query, [], async (err, rows) => {
