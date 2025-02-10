@@ -59,7 +59,7 @@
   box-shadow: 0 2px 6px rgba(124, 48, 48, 0.1);
 }
 
-/* Add stock form layout */
+
 .add-stock-form-container {
   background-color: #b79a9a;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -89,7 +89,6 @@
   background-color: #45a049;
 }
 
-/* Portfolio metrics */
 .portfolio-metrics {
   background-color: #b6e0eb;
   padding: 15px;
@@ -107,7 +106,6 @@
   color: #555;
 }
 
-/* Stock card layout */
 .stock-cards-container {
   display: flex;
   flex-wrap: wrap;
